@@ -1,4 +1,4 @@
-name: Hexo Deploy
+name: Deploy
 
 on:
   push:
@@ -21,10 +21,11 @@ jobs:
         with:
           toolchain: nightly
           override: true
-        run: cargo install mdbook
 
       - name: Build
-        run: mdbook build
+        run: |
+          cargo install mdbook
+          mdbook build
 
       - name: Deploy
         env:
@@ -40,4 +41,4 @@ jobs:
           git config --global user.name "wtox"
           cd ./book && git init && git add .
           git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-          git push --force --quiet "$GITHUB_REPO" master:master 
+          git push --force --quiet "$REPO" master:master 
