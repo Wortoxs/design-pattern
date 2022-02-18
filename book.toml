@@ -1,0 +1,6 @@
+[book]
+authors = ["wotoxs"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Design Pattern"
