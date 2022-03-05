@@ -3,4 +3,4 @@
 
 ## UML
 ### 访问者模式
-![访问者模式](./visitor.md)
+![访问者模式](./images/visitor.png)

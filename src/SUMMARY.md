@@ -9,7 +9,7 @@
   - [桥接模式](./bridge.md)
   - [组合模式](./composite.md)
   - [装饰器模式](./decorator.md)
-  - [享元模式](./factory.md)
+  - [享元模式](./flyweight.md)
   - [代理模式](./proxy.md)
 - [行为型模式](./behavioral.md)
   - [职责链模式](./chain.md)
